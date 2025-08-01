@@ -1,5 +1,5 @@
 "use client"
-
+import Homepage from "@/components/homepage"
 import { motion } from "framer-motion"
 import Link from "next/link"
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs"
@@ -23,7 +23,7 @@ export default function Navbar() {
           </div>
 
           <div className="hidden md:flex items-center space-x-8 font-tech text-lg">
-            <a href="#home" className="text-white hover:text-[#ff003c] transition-colors">
+            <a href="/homepage" className="text-white hover:text-[#ff003c] transition-colors">
               Home
             </a>
             <a href="#about" className="text-white hover:text-[#ff003c] transition-colors">
